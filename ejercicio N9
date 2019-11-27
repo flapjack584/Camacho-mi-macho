@@ -1,0 +1,40 @@
+//ejercicio N9
+
+
+#include <stdio.h>
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+//prototipo de funciones
+float areadecirculo(float ,float ,float);
+
+float R;
+float A;
+float B;
+
+int main()
+{
+    areadecirculo(R,A,B);
+    
+    return 0;
+}
+
+
+//desarrollo de la funciones
+
+float areadecirculo(float R,float A,float B)
+{
+    float PI=3.1416;
+    float AC=0;
+    cout<<"ingrese el radio del circulo"<<endl;   cin>>R;
+    cout<<"ingrese la base y la altura del triangulo"<<endl;    cin>>B>>A;
+    
+    AC=(PI*pow(R,2))-((B*A)/2);
+    
+    cout<<"el area del circulo va a ser"<<AC<<endl;
+    
+    return 0;
+    
+}
